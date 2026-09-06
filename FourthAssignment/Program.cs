@@ -1,9 +1,12 @@
 ﻿
+using FourthAssignment;
+
 class Book
 {
     private string password = "secret";
     internal int copiesInStock = 5;
     public string Title;
+    public Genre Genre { get; set; }
 
 
 }
@@ -27,6 +30,11 @@ class Program
         book.Title = "C# Basics";
 
         Console.WriteLine(book.Title);
+        #endregion
+        #region fourth question
+        book.Genre = Genre.Science;
+
+        Console.WriteLine(book.Genre);
         #endregion
     }
 }
