@@ -18,7 +18,7 @@ class Program
 
         Book book = new Book();
         #region first question
-        Console.WriteLine(book.password);
+       // Console.WriteLine(book.password);
         // will not compile because password is private and cannot be accessed from outside the Book class
         #endregion
         #region second question
@@ -40,6 +40,12 @@ class Program
         Console.WriteLine((int)Genre.Fiction);
         Console.WriteLine((int)Genre.NonFiction);
         Console.WriteLine((int)Genre.Science);
+        #endregion
+        #region sixth question
+        int genreNumber = 1;
+        Genre genre = (Genre)genreNumber;
+
+        Console.WriteLine(genre);
         #endregion
     }
 }
