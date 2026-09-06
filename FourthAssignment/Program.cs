@@ -18,7 +18,7 @@ class Program
 
         Book book = new Book();
         #region first question
-       // Console.WriteLine(book.password);
+        // Console.WriteLine(book.password);
         // will not compile because password is private and cannot be accessed from outside the Book class
         #endregion
         #region second question
@@ -53,6 +53,13 @@ class Program
         string genreText = genre2.ToString();
 
         Console.WriteLine(genreText);
+        #endregion
+        #region eighth question
+        string genreText2 = "Science";
+
+        Genre genre3 = (Genre)Enum.Parse(typeof(Genre), genreText2);
+
+        Console.WriteLine(genre3);
         #endregion
     }
 }
