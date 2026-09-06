@@ -61,5 +61,18 @@ class Program
 
         Console.WriteLine(genre3);
         #endregion
+        #region ninth question
+        string genreText3 = "Mystery";
+        Genre genre4;
+
+        if (Enum.TryParse(genreText3, out genre4))
+        {
+            Console.WriteLine(genre4);
+        }
+        else
+        {
+            Console.WriteLine("Unknown genre");
+        }
+        #endregion
     }
 }
